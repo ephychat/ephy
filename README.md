@@ -1,5 +1,5 @@
 # ephy
-A subliminal text-based ephemeral Instant Messenger(IM) based on [Internet Relay Chat(IRC)](https://tools.ietf.org/html/rfc1459) Protocol.
+A minimal text-based ephemeral Instant Messenger(IM) based on [Internet Relay Chat(IRC)](https://tools.ietf.org/html/rfc1459) Protocol.
 
 # Contributors
 #### Developer(s):
