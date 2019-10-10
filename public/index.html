@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ephy chat | Sign in</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
 </head>
 <body>
-    
+    <!-- TODO: Add aria data labels for accessibility -->
+    <!-- navbar -->
+    <div class="siimple-navbar siimple-navbar--blue siimple-navbar--fluid">
+        <a class="siimple-navbar-title">Ephy Chat</a>
+        <a class="siimple-navbar-subtitle">Minimal ephemeral IM</a>
+        <div class="siimple--float-right">
+            <div class="siimple-navbar-item siimple-field-label siimple--display-inline-block">Username</div>
+            <input id="login-name" 
+                   type="email" 
+                   class="siimple-input siimple-input siimple--display-inline" 
+                   placeholder="bob.kreller@email.com" 
+                   autocomplete="off">
+            <div class="siimple-navbar-item siimple-field-label siimple--display-inline-block">Password</div>
+            <input id="login-pass" 
+                   type="password"
+                   class="siimple-input siimple-input siimple--display-inline" 
+                   placeholder="password">
+            <div class="siimple-btn siimple-btn--primary">Sign In</div>
+            <a class="siimple-navbar-item text-small">Forgot password ?</a>
+        </div>
+    </div>
 </body>
 </html>
