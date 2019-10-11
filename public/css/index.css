@@ -1,0 +1,17 @@
+.ephy-txt-sm {
+    font-size: 13px;
+}
+
+.ephy-pd-sm-pt-8 {
+    padding-left: .8em;
+    padding-right: .8em;
+}
+
+.ephy-pd-bottom-zero {
+    padding-bottom: 0 !important;
+}
+
+.ephy-mg-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
