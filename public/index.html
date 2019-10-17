@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ephy chat | Sign in</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
+    <style>
+        .text-small {
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
     <!-- TODO: Add aria data labels for accessibility -->
-    <!-- navbar -->
+    <!-- navbar with required fields to login and assistance -->
     <div class="siimple-navbar siimple-navbar--blue siimple-navbar--fluid">
         <a class="siimple-navbar-title">Ephy Chat</a>
-        <a class="siimple-navbar-subtitle">Minimal ephemeral IM</a>
+        <a class="siimple-navbar-subtitle text-small">Minimal ephemeral IM</a>
+
         <div class="siimple--float-right">
             <div class="siimple-navbar-item siimple-field-label siimple--display-inline-block">Username</div>
             <input id="login-name" 
@@ -20,14 +26,62 @@
                    class="siimple-input siimple-input siimple--display-inline" 
                    placeholder="bob.kreller@email.com" 
                    autocomplete="off">
+
             <div class="siimple-navbar-item siimple-field-label siimple--display-inline-block">Password</div>
             <input id="login-pass" 
                    type="password"
                    class="siimple-input siimple-input siimple--display-inline" 
                    placeholder="password">
+
             <div class="siimple-btn siimple-btn--primary">Sign In</div>
             <a class="siimple-navbar-item text-small">Forgot password ?</a>
         </div>
     </div>
+    <!-- sign up form for reegistration -->
+    <div class="siimple-content siimple-content--extra-small no-padding-bottom">
+            <div class="siimple--px-5 siimple--py-4">
+
+                <div class="siimple-h3 siimple--text-normal siimple--mb-1" align="center">Sign Up</div>
+                <div class="siimple-paragraph siimple-paragraph--lead" align="center">
+                    Woo-hoo! Just 3-Steps away to blast 🎉
+                </div>
+
+                <div class="siimple-field">
+                    <div class="siimple-field-label">Username</div>
+                    <input type="text" 
+                           class="siimple-input siimple-input--fluid" 
+                           placeholder="bob.kayler" 
+                           autocomplete="off">
+                    <!-- <div class="siimple-field-helper">Your username must be unique</div> -->
+                </div>
+
+                <div class="siimple-field">
+                    <div class="siimple-field-label">E-mail</div>
+                    <input type="email" 
+                           class="siimple-input siimple-input--fluid" 
+                           placeholder="bob.kayler@email.com" 
+                           autocomplete="off">
+                            <!-- <div class="siimple-field-helper">Your e-mail ID is the only way to get in touch with you -->
+                </div>
+
+                <div class="siimple-field">
+                    <div class="siimple-field-label">Password</div>
+                    <input type="password" 
+                           class="siimple-input siimple-input--fluid" 
+                           placeholder="password">
+                    <div class="siimple-field-helper">You password must contain at least 8 characters</div>
+                </div>
+                
+                <div class="siimple-field">
+                    <div class="siimple-btn siimple-btn--primary siimple-btn--fluid siimple--text-bold">
+                        Sign Up
+                    </div>
+                </div>
+                <div class="siimple-card siimple--mt-5" align="center">
+                    <div class="siimple-card-body">
+                        Need help ? <a class="siimple-link">Click here</a>.
+                    </div>
+                </div>
+            </div>
 </body>
 </html>
