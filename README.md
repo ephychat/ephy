@@ -1,6 +1,5 @@
 # ephy
-A minimal ephemeral Instant Messenger(IM) based on variant [Internet Relay Chat(IRC)](https://tools.ietf.org/html/rfc1459) Protocol implementation.
-
+A minimal ephemeral Instant Messenger(IM)
 # Contributors
 #### Developer(s):
 [@akhilry](https://github.com/akhilry)
