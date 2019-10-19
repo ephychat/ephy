@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ephy Chat | Messages</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
+    <link rel="stylesheet" href="./css/messages.css">
+</head>
+<body>
+    <div class="siimple-grid">
+        <!-- Message Input bar -->
+        <div class="siimple-grid-row">
+            <div class="siimple-grid-col siimple-grid-col--12">
+                <div class="ephy-message-card">
+                    <label for="ephy-msg-box" class="siimple-small" id="ephy-typing-status-txt">someone is typing ...</label>
+                    <textarea class="siimple-textarea siimple-textarea--fluid ephy-textarea" 
+                              id="ephy-msg-box" placeholder="Type your message here ..." autofocus></textarea>
+                    <img src="../public/images/timer.png" alt="a clock with 2 crowns" id="ephy-timer-btn">
+                    <div id="ephy-time-duration-wrapper">
+                        <span><button id="duration-in-sec" class="ephy-duration-btn">00 s</button></span>
+                        <span><button id="duration-in-min" class="ephy-duration-btn">00 m</button></span>
+                        <span><button id="duration-in-hour" class="ephy-duration-btn">00 h</button></span>
+                        <span><button id="duration-in-day" class="ephy-duration-btn">00 d</button></span>
+                        <span><button id="duration-in-week" class="ephy-duration-btn">00 w</button></span>
+                    </div>
+                    <img src="../public/images/paper-plane.png" alt="a flying paper-plane" id="ephy-send-btn">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
