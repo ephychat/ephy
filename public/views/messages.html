@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ephy Chat | Messages</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/messages.css">
+</head>
+<body>
+    <!-- <ul id="messages"></ul> -->
+    <div class="siimple-grid" id="app">
+        <!-- User Content -->
+        <div class="siimple-grid-row" >
+                <div class="siimple-grid-col siimple-grid-col--12 siimple-grid-col--sm-12" id="msg-wrapper">
+                    <!-- <div class="siimple-card"> -->
+                            <!-- TODO: Vertical nav bar -->
+                            <!-- <div class="profile-pic"> -->
+                                <!-- <img src="/images/ryan.jpg" alt=""> -->
+                            <!-- </div> -->
+                            <!-- <span class="siimple-small msg-sender">Bob</span> -->
+                            <!-- <span class="msg-txt">Hi!</span>  -->
+                            <!-- <span class="siimple-small msg-pop-time">Pops in 02 h</span> -->
+                            <!-- <span class="siimple-small msg-sent-time">10: 30 AM</span> -->
+                    <!-- </div> -->
+                </div>
+        </div>
+        <!-- Message Input bar -->
+        <div class="siimple-grid-row">
+            <div class="siimple-grid-col siimple-grid-col--12">
+                <div class="ephy-message-card">
+                    <label for="ephy-msg-box" class="siimple-small" id="ephy-typing-status-txt">someone is typing ...</label>
+                    <textarea class="siimple-textarea siimple-textarea--fluid ephy-textarea" 
+                              id="ephy-msg-box" placeholder="Type your message here ..." 
+                              autofocus></textarea>
+                    <img src="/images/timer.png" alt="a clock with 2 crowns" id="ephy-timer-btn">
+                    <div id="ephy-time-duration-wrapper">
+                        <span><button id="duration-in-sec" class="ephy-duration-btn">00 s</button></span>
+                        <span><button id="duration-in-min" class="ephy-duration-btn">00 m</button></span>
+                        <span><button id="duration-in-hour" class="ephy-duration-btn">00 h</button></span>
+                        <span><button id="duration-in-day" class="ephy-duration-btn">00 d</button></span>
+                        <span><button id="duration-in-week" class="ephy-duration-btn">00 w</button></span>
+                    </div>
+                    <img src="/images/paper-plane.png" alt="a flying paper-plane" id="ephy-msg-send-btn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="/js/messages.js"></script>
+</body>
+</html>
