@@ -5,6 +5,8 @@
 
 body { background-color: #f5f5f5; }
 
+li { list-style: none; }
+
 /*-----------------------------------------*
  *        Overriden Framework Styles       *
  *-----------------------------------------*/  
@@ -57,7 +59,7 @@ body { background-color: #f5f5f5; }
 }
 
 #ephy-timer-btn, 
-#ephy-send-btn {
+#ephy-msg-send-btn {
     position: relative;
     top: -42px;
     padding: 9px 16px 9px 16px;
@@ -66,7 +68,7 @@ body { background-color: #f5f5f5; }
 
 #ephy-timer-btn { float: left; }
 
-#ephy-send-btn { float: right; }
+#ephy-msg-send-btn { float: right; }
 
 #ephy-time-duration-wrapper { 
     position: relative;
@@ -88,8 +90,61 @@ body { background-color: #f5f5f5; }
 
 .ephy-duration-btn:hover { background-color: #444; }
 
-#ephy-send-btn:hover, 
+#ephy-msg-send-btn:hover, 
 #ephy-timer-btn:hover { background-color: #c6d7e8; }
 
-#ephy-send-btn:active, 
+#ephy-msg-send-btn:active, 
 #ephy-timer-btn:active { background-color: #b8c6d0; }
+
+/* .siimple-card { border: 1px solid #333; } */
+
+.profile-pic img, 
+.msg-txt,
+.msg-sender,
+.msg-sent-time,
+.msg-pop-time {
+    position: relative;
+}
+
+.msg-txt,
+.msg-sent-time {
+    display: block;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin-left: 24px;
+}
+
+.msg-sender {
+    left: 24px; /* 80px */
+    top: 0px; /* -48px */
+}
+
+.msg-txt {
+    left: 40px; /* 80, 48px */
+    top: -32px; /* 32px, -24 */
+    display: inline-block;
+    font-family: 'Arial', serif;
+    color: #2222ff;
+}
+
+.msg-sent-time {
+    color: #465665;
+    left: -132px; /* 180, -124 px*/
+    top: -40px; /* 8, 0 */
+    /* color: #333; */
+}
+
+/* .msg-pop-time {
+    left: -48px;
+    top: -4px;
+    color: #465665;
+} */
+
+#msg-wrapper {
+    overflow: scroll;
+    scroll-behavior: smooth;
+}

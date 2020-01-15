@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "A minimal ephemeral IM based on variant of IRC protocol",
   "main": "index.js",
-  "scripts": {
+  "sc{ripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
